@@ -1,0 +1,19 @@
+1. Mensageria 
+    - O que e mensageria 
+ Podemos definir como mensageria como uma forma de intermediar a comunicacao entre sistemas distribuidos ,isso acontence por meio de troca de mensagens (eventos)
+ onde as mensagens sao gerenciadas por um message Broker <Servidor_de_Mensagem>
+
+    - Pilares da mensageria:
+# PayLoad mesagem com o eventos que  contem os dados
+Message/Event
+{
+    "Key": "123456",
+    "data": "Mensagem de Teste"
+} 
+
+# Message Broker (Servidor de mensagem)
+- Recebe e armazenar a mensagem 
+
+# Producer/Publisher -(Quem envia o evento)/(Manda a mensagem para o brocker)
+
+# Consumer/Subscribe -(Quem consome o evento)/(Recebe a mensagem para o brocker)
