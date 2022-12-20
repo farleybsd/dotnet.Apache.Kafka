@@ -17,3 +17,4 @@ Message/Event
 # Producer/Publisher -(Quem envia o evento)/(Manda a mensagem para o brocker)
 
 # Consumer/Subscribe -(Quem consome o evento)/(Recebe a mensagem para o brocker)
+
