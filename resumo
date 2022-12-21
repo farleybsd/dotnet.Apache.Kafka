@@ -18,3 +18,56 @@ Message/Event
 
 # Consumer/Subscribe -(Quem consome o evento)/(Recebe a mensagem para o brocker)
 
+
+# Introducao ao Apache kAFCKA
+- Dessenvolvido pelo Linkedin para tonar  a comunicacao entre aplicacoes mais eficinte, feito em java e scala.
+- E um dos principais seus objetivos e lidar com grande volume de dados e baixa latencia.
+
+# Arquitetura do Apache kAFCKA
+- E baseado em commit log .
+- Gravadas as mensagem de forma sequencial no disco.
+
+# Topico 
+
+- Um topico basicamente e uma forma de gerenciar grupo de mensagem dentro do Apache kAFCKA,dessa forma a gente sabe onde devemos publicar uma mensagem e o onde devemos consumir tambem.
+
+# Particao 
+- Cada topico e formado pelo menos com uma particao podendo existir N particoes 
+- Particao e aonde as mensagem sao armazenadas
+- Porporciona o paralelismo
+
+exemplo:
+Imagine onde um codominio e todo sistema do Apache kAFCKA e aonde cada apartamento e um topico e a particao seria cada andar.
+
+# Offsets
+- Todas as mensagem qe chegam no Apache kAFCKA sao armazenadas e uma paticao, mas dentro da particao, existem os offsets que e a mensagem armazenada fisicamente
+- conteudo da mesagem
+- Header
+- Posicao do Ponteiro aonde indica a para qual a proxima mensagem a ser lida
+
+exemplo:
+Imagine onde um codominio e todo sistema do Apache kAFCKA e aonde cada apartamento e um topico e a particao seria cada andar e offset seria numero do aparmento que contem aonde fisicamente se econtra  a mensagem.
+
+# Produtor
+
+- E o responsavel por se comunicar com o cluster kafka e enviar as mensagem para um topico 
+- Defualt retem a mensagem por sete dias
+- Excluida na ordem cronologica
+Brocker e o servidor
+
+# Consumidor 
+- Responsavel por ler as mensagens de um topico ou varios topicos no Apache kafka
+- Nao e igual subscribe ele nao notifica precisa emplementar uma logico geralmente usa-se um loop.
+
+# Grupo de consumidores
+- Quando a gente sobe uma instacia de um consumidor podemos informar qual grupo de consumo ele faz parte para o Apache kafka, quando existe varios consumidores dentro de um grupo criamos uma especie de balanceamento,a carga da leitura das mensagens nas particoes sao distribuidas uniformente entre as instancias.
+- Duas instancias  podem conectar a mais de uma  particao
+-  duas instancia nao podem conectar na mesma particao 
+
+# Zookeeper
+- Zookeeper e um software dessenvolvido pela Apache e funciona como um servico centralizado onde mantem as configuracoes e estados do servidores, em nosso cluster Apache kafka.
+
+# KIP-500
+- KIP-500 e um conjunto de propostas para retirada do zoopeker e a criacao de um novo Quorum do controlador, no qual os nos sejam capazes de conversar entre si e eleger um lider controlador.
+
+# Comparação Apache Kafka vs RabbitMQ
