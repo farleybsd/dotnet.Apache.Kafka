@@ -71,3 +71,29 @@ Brocker e o servidor
 - KIP-500 e um conjunto de propostas para retirada do zoopeker e a criacao de um novo Quorum do controlador, no qual os nos sejam capazes de conversar entre si e eleger um lider controlador.
 
 # Comparação Apache Kafka vs RabbitMQ
+
+# Dowload Apache Kafcka
+https://kafka.apache.org/
+
+- Versao 3.1.
+- Scala 2.13
+
+# Offset Explorer Acessar Cluster  de forma grafica
+- https://www.kafkatool.com/
+
+# Instalacao subindo servidor local
+- C:\MyGit\dotnet.Apache.Kafka\Dowload\kafka_2.13-3.1.0\kafka_2.13-3.1.0\bin\windows\kafka-server-start.bat
+
+- C:\MyGit\dotnet.Apache.Kafka\Dowload\kafka_2.13-3.1.0\kafka_2.13-3.1.0\bin\windows\zookeeper-server-start.bat
+
+## Config kafka
+- C:\MyGit\dotnet.Apache.Kafka\Dowload\kafka_2.13-3.1.0\kafka_2.13-3.1.0\config\server.properties
+
+## Subindo Server Kafka - Acessar o diretotio do dowload o kafcka
+- PS C:\kafka> .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+- PS C:\kafka> .\bin\windows\kafka-server-start.bat .\config\server.properties
+
+
+
+ 
