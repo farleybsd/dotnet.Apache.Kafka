@@ -1,0 +1,51 @@
+### Criando um Topico Manual
+- Entrar no diretorio do kafka
+- .\bin\windows\kafka-topics.bat --create --topic cursos --bootstrap-server localhost:9094
+
+## Listando um Topico 
+
+- Entrar no diretorio do kafka
+- .\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9094,localhost:9095
+
+## Excluindo Tipoico
+- Entrar no diretorio do kafka
+- .\bin\windows\kafka-topics.bat --delete --topic cursos --bootstrap-server localhost:9094
+
+### Criando um Topico com particao replicacao
+- replicas so pode ser o maximo de brocker que vc tem 
+- Entrar no diretorio do kafka
+- .\bin\windows\kafka-topics.bat --create --topic chat --bootstrap-server localhost:9094 --partitions 2 --replication-factor 2
+
+
+### Alterando quantidade de particao de um topico
+- Entrar no diretorio do kafka
+- .\bin\windows\kafka-topics.bat --alter --topic chat --bootstrap-server localhost:9094 --partitions 3
+
+
+### Informacoes de um topico
+-- Usar OffsetExplorer
+- Criar uma Conexao com Cluster
+- Entrar no diretorio do kafka
+- .\bin\windows\kafka-topics.bat --describe --topic chat --bootstrap-server localhost:9094 
+
+
+### Produzindo Mensagem no kafka
+- Entrar no diretorio do kafka
+-  .\bin\windows\kafka-console-producer.bat  --topic chat --bootstrap-server localhost:9094     (vai cair no modo para digitar mensagem) 
+
+### Consumindo Mensagem no kafka
+- Entrar no diretorio do kafka
+-  .\bin\windows\kafka-console-consumer.bat  --topic chat --bootstrap-server localhost:9094
+
+### Consumindo Mensagem no kafka antigas 
+- Entrar no diretorio do kafka
+-  .\bin\windows\kafka-console-consumer.bat  --topic chat --bootstrap-server localhost:9094 --from-beginning --property print.partition=true --property print.offset=true
+
+### Consumindo Mensagem no kafka em grupo de consumidores
+
+- Entrar no diretorio do kafka
+-  .\bin\windows\kafka-console-consumer.bat  --topic chat --bootstrap-server localhost:9094 --from-beginning --property print.partition=true --property print.offset=true --group grupo1 
+
+-- Abrir mais um consumer mudando o grupo
+.\bin\windows\kafka-console-consumer.bat  --topic chat --bootstrap-server localhost:9094 --from-beginning --property print.partition=true --property print.offset=true --group grupo2
+  
