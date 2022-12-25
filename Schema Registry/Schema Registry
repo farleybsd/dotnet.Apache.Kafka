@@ -1,0 +1,6 @@
+## Schema Registry
+- O Schema Registry tem como objetivo fornecer uma api RestFull  para gerenciar e versionar esquemas no formato <Avro> <JsonSchema> <Protobuf> para um topico.
+- Todas as informacoes (metadados) do <Schema> sao armazenados em um topico do propio apache Kafka
+- Nao deve ser execultado na mesma maquina que contem um brocker do apache kafka se o kafkca cair  e Schema Registry tiver na mesma maquina ira fica indisponivel
+
+- Schema Registry e responsavel em padronizaro formato de dados que esta entrado em um <Producer> e que sera lido por um <Consumer>. Tanto o produtor quando o consumidor no primeiro request gera um id no Schema Registry com o formato do dados e depois ele passa ser consultado para nao ter erro de formato entre as tramsacoes. 
