@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "hVr9T0P20nwrVFFVd7bwQxdy0tV5kNHRUHBiSSSuZoYlnvQNoHXKC2r78TxsgeAi9l3YILRcELmA6e1DL2ku1A==",
+  "success": true,
+  "projectFilePath": "C:\\MyGit\\dotnet.Apache.Kafka\\Projeto\\Desenvolvedor.IO\\Produtor\\Produtor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\farley.rufino\\.nuget\\packages\\confluent.kafka\\1.8.2\\confluent.kafka.1.8.2.nupkg.sha512",
+    "C:\\Users\\farley.rufino\\.nuget\\packages\\librdkafka.redist\\1.8.2\\librdkafka.redist.1.8.2.nupkg.sha512",
+    "C:\\Users\\farley.rufino\\.nuget\\packages\\system.memory\\4.5.0\\system.memory.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
