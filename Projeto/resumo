@@ -1,0 +1,26 @@
+## Criando Projeto
+- Entrar na pasta do projeto 
+
+- Criar solucao
+dotnet new sln -n Desenvolvedor.IO
+
+- Criando Projeto Produtor
+dotnet new console -n Produtor
+
+- Instalando o Cofluente no Produtor
+dotnet  add Produtor package Confluent.Kafka --version 1.8.2
+
+- Criando Consumidor 
+dotnet new console -n Consumidor
+
+- Instalando o Cofluente no Produtor
+dotnet  add Consumidor package Confluent.Kafka --version 1.8.2
+
+- Adicionando Projeto na Solucao 
+# Produtor
+dotnet sln add Produtor
+# Consumidor
+dotnet sln add Consumidor
+
+# Bulid
+dotnet build
