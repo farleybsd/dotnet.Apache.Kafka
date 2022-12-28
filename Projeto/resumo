@@ -24,3 +24,9 @@ dotnet sln add Consumidor
 
 # Bulid
 dotnet build
+
+
+## Rodando Consumidor/Produtor 
+
+entrar na pasta consumidor / produtor
+dotnet run

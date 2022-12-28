@@ -9,10 +9,14 @@
           "librdkafka.redist": "1.8.2"
         },
         "compile": {
-          "lib/netcoreapp2.1/Confluent.Kafka.dll": {}
+          "lib/netcoreapp2.1/Confluent.Kafka.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp2.1/Confluent.Kafka.dll": {}
+          "lib/netcoreapp2.1/Confluent.Kafka.dll": {
+            "related": ".xml"
+          }
         }
       },
       "librdkafka.redist/1.8.2": {
@@ -288,7 +292,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -297,7 +302,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.415\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }
