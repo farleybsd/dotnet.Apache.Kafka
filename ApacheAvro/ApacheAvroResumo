@@ -1,0 +1,9 @@
+## Instalando o apache Avro
+- Faz a desserealizacao das mensagens em formato binario
+- Validacao esquema 
+
+## Instalando
+- Entrar na pasta do projeto 
+dotnet tool install --global Apache.Avro.Tools
+dotnet add Produtor package Confluent.SchemaRegistry.Serdes.Avro   Version="1.8.2"
+dotnet add Consumidor package Confluent.SchemaRegistry.Serdes.Avro Version="1.8.2"

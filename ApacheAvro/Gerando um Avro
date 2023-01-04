@@ -1,0 +1,7 @@
+### Gerando um Esquema Arvo
+
+- Acessar a pasta do Produtor
+- avrogen -s ..\Avros\Curso.avsc . ou avrogen -s .\Curso.avsc . ou avrogen -s .\Curso.avsc .\Produtor\
+
+- Acessar a pasta do Consumidor
+-  avrogen -s .\Curso.avsc .\Consumidor\

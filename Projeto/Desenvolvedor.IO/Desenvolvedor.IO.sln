@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.33130.400
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Produtor", "Produtor\Produtor.csproj", "{065B4F64-08D4-4E17-B692-292C7AC4FE18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Produtor", "Produtor\Produtor.csproj", "{065B4F64-08D4-4E17-B692-292C7AC4FE18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consumidor", "Consumidor\Consumidor.csproj", "{270AB4B4-ADF1-4BF5-9CD5-CC3EC3FB055E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Consumidor", "Consumidor\Consumidor.csproj", "{270AB4B4-ADF1-4BF5-9CD5-CC3EC3FB055E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Avros", "Avros", "{45F19ED8-8AF1-415B-AE33-8D44B163D80B}"
+	ProjectSection(SolutionItems) = preProject
+		Curso.avsc = Curso.avsc
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
