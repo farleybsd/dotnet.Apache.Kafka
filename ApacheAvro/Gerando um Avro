@@ -5,3 +5,5 @@
 
 - Acessar a pasta do Consumidor
 -  avrogen -s .\Curso.avsc .\Consumidor\
+
+-- Atencao sempre que precisar colocar uma propiedade Nova Adiconar no Schema do avro e gerar novamente o arquivo
