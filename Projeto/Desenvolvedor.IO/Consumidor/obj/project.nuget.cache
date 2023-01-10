@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "IlLR0q/379vtwWHrYQ3nK0PP8kGP4TpsED2N8wyScvJ3zzhmL9WoqKoPosfxQfy+5Bvdgcm9j1o09RqdcfBRnw==",
+  "dgSpecHash": "wnAJJ5KouHweStb2lvxASA8pSp45gzDcVs7YvhRIIlyKlSlfQhQL8UXrbQUB2srb/9XEmgxIu44W5GEi2P5hOg==",
   "success": true,
   "projectFilePath": "C:\\MyGit\\dotnet.Apache.Kafka\\Projeto\\Desenvolvedor.IO\\Consumidor\\Consumidor.csproj",
   "expectedPackageFiles": [
